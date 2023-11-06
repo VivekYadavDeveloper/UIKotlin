@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shadeBlue"
+    android:gravity="center"
+    android:padding="16dp">
+    <!--Check And Close Button-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true">-->
+
+    <!--        <ImageButton-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="48dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:contentDescription="@string/check"-->
+    <!--            android:src="@drawable/check" />-->
+
+    <!--        <ImageButton-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="48dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:contentDescription="@string/wrong"-->
+    <!--            android:src="@drawable/close" />-->
+
+
+    <!--    </LinearLayout>-->
+    <!--    &lt;!&ndash;Time And Score &ndash;&gt;-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:padding="16dp">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:gravity="start"-->
+    <!--            android:text="TIME : 04"-->
+    <!--            android:textSize="24sp"-->
+    <!--            tools:ignore="HardcodedText" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:gravity="end"-->
+    <!--            android:text="SCORE : 01"-->
+    <!--            android:textSize="24sp"-->
+    <!--            tools:ignore="HardcodedText" />-->
+
+
+    <!--    </LinearLayout>-->
+
+
+    <!--Title Of Page-->
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="L O G I N"
+        android:textSize="35sp"
+        tools:ignore="HardcodedText">
+
+    </TextView>
+
+
+    <!--Email TextField-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Emailtextfield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginTitle"
+        android:hint="@string/email"
+        app:startIconDrawable="@drawable/baseline_email_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Password TextField-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Passtextfield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Emailtextfield"
+        android:hint="@string/password"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/baseline_password_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Forgot Password-->
+    <Button
+        android:id="@+id/ForgotPass"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Passtextfield"
+        android:layout_alignParentEnd="true"
+        android:text="@string/forgot_password"
+        android:textSize="18sp">
+
+    </Button>
+
+
+    <!--Login Button-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/LoginButton"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ForgotPass"
+        android:layout_centerInParent="true"
+        android:text="@string/login">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <!--Already Have An Account-->
+    <TextView
+        android:id="@+id/AlreadyAcc"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LoginButton"
+        android:layout_centerInParent="true"
+        android:text="@string/already_have_an_account"
+        android:textSize="18sp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/sigin_acc"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AlreadyAcc"
+        android:layout_alignEnd="@+id/AlreadyAcc"
+
+        android:layout_marginTop="-36dp"
+        android:text="@string/signin">
+
+    </Button>
+
+</RelativeLayout>
+
+
+
+

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shadeBlue"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!--Title Of Page-->
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:text="S I G N U P"
+        android:textSize="35sp"
+        tools:ignore="HardcodedText">
+
+    </TextView>
+
+
+    <!--Email TextField-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/SignEmailtextfield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginTitle"
+        android:hint="@string/email"
+        app:startIconDrawable="@drawable/baseline_email_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Password TextField-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/SignPasstextfield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SignEmailtextfield"
+        android:hint="@string/password"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/baseline_password_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Password TextField-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/SignConfirmPasstextfield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SignPasstextfield"
+        android:hint="@string/confirm_password"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/baseline_password_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--Signup Button-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/SignupButton"
+        android:layout_width="193dp"
+        android:layout_height="53dp"
+
+        android:layout_below="@+id/SignConfirmPasstextfield"
+        android:layout_centerInParent="true"
+
+        android:text="@string/signup">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <!--Already Have An Account-->
+    <TextView
+        android:id="@+id/AlreadyAcc"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SignupButton"
+        android:layout_centerInParent="true"
+        android:text="@string/already_have_an_account"
+        android:textSize="18sp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/AlreadyAccHaveAccountLogin"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AlreadyAcc"
+        android:layout_alignEnd="@+id/AlreadyAcc"
+        android:layout_marginTop="-36dp"
+        android:text="@string/loginuser">
+
+    </Button>
+
+</RelativeLayout>
+
+
+
+

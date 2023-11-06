@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+
+        android:id="@+id/notificationIcon"
+        android:icon="@drawable/baseline_circle_notifications_24"
+        android:title="@string/notificationIcon"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+    <item
+        android:id="@+id/shareIcon"
+        android:icon="@drawable/share"
+        android:title="@string/shareIcon"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom">
+
+    </item>
+    <item
+        android:id="@+id/searchIcon"
+        android:icon="@drawable/baseline_searched_for_24"
+        android:title="@string/searchIcon"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom">
+
+    </item>
+</menu>
